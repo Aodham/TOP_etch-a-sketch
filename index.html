@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Pacifico&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+        <div id="tools">
+            <div id="canvasSize">
+                <button id="8" class="deselected">8x8</button>
+                <button id="16" class="selected">16x16</button>
+                <button id="32" class="deselected">32x32</button>
+                <button id="64" class="deselected">64x64</button>
+            </div>
+            <div id="colorSelector">
+                <button id="black" class="selected"></button>
+                <button id="crimson" class="deselected"></button>
+                <button id="dodgerblue" class="deselected"></button>
+                <button id="springgreen" class="deselected"></button>
+                <button id="white" class="deselected"></button>
+                <button id="unicorn" class="deselected"></button>
+            </div>
+            <button id="reset">Reset</button>
+        </div>
+    </header>
+    <main>
+        <div id="canvas"></div>
+    </main>
+</body>
+<script src="scripts.js"></script>

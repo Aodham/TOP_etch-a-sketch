@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: lightsteelblue;
+}
+
+header {
+    margin: 0 10vw;
+    background-color: black;
+    display: flex;
+    min-height: 2em;
+    align-items: flex-end;
+    padding: 1em;
+    border-radius: 0 0 4em 4em;
+}
+
+h1 {
+    margin: 0 0 0 1.2em;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    line-height: 0;
+    margin: 0.3em 0.9em;
+    color: white;
+}
+
+#logo {
+    margin-left: 2em;
+}
+
+#tools {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#canvasSize button {
+    width: 4em;
+}
+
+#colorSelector {
+    margin: 0 4em;
+}
+
+button {
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    border: solid 0;
+    background-color: gray;
+    font-size: 1em;
+    margin: 0 0.2em;
+}
+
+.deselected {
+    opacity: 0.5;
+}
+
+.selected {
+    opacity: 1;
+}
+
+#colorSelector button {
+    border: solid 1px white;
+}
+
+button:hover {
+    opacity: 1;
+}
+#black {
+    background-color: Black;
+}
+
+#crimson {
+    background-color: Crimson;
+}
+
+#dodgerblue {
+    background-color: DodgerBlue;
+}
+
+#springgreen {
+    background-color: SpringGreen;
+}
+
+#white {
+    background-color: White;
+}
+
+#unicorn {
+    background-image: linear-gradient(to right, #ffbe0b, #ff006e, #3a86ff)
+}
+
+#reset {
+    margin-right: 2.5em;
+    width: 4em;
+}
+
+main {
+    width: 100%;
+}
+
+#canvas {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 5vh auto 0 auto;
+    height: 80vh;
+    width: 80vh;
+    box-shadow: 0 0 1em grey;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.pixel {
+    flex: 1;
+}
+
+@media (max-width: 1560px) {
+    header {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1260px) {
+    header {
+        border-radius:  0;
+    }
+
+    button {
+        margin: 0.1em;
+    }
+
+    h1 {
+        margin-left: 0;
+    }
+    
+    #colorSelector {
+        margin: 0 1em;
+    }
+
+    #reset {
+        margin: 0 1em;
+    }
+}
